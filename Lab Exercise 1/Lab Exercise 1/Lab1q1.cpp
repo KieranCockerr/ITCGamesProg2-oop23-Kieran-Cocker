@@ -10,9 +10,10 @@ int main()
 	std::cout << "The size of the array is " << sizeof(arrayA) << "\n"; // Print the size of the array in memory
 
 	// range loop
-	for (int value : arrayA)
-	{
+	for (int &value : arrayA)
+	{ 
 		value++; // Add +1 to each element of the array
 		std::cout << value << "\n"; // Display all the elements of the array
 	}
+
 }
